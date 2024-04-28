@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dictionary</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-
     <div class="header">
         <h1>My Dictionary</h1>
     </div>
-    <div class = "page">
+    <div class="page">
         <div class="container">
             <div class="search-form">
-                <input type="text" class="search-input" placeholder="Search for a word">
-                <button class="search-button">Search</button>
+                <input type="text" class="search-input" placeholder="Search for a word" autocomplete="off">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
+            <div class="suggestions"></div>
             <div class="dictionary-app"></div>
+            
         </div>
         <div class="history-section">
             <button class="clear-history-button">Clear History</button>
             <div class="search-history"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="controllers/controller.js"></script>
 </body>
 </html>
